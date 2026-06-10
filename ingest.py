@@ -1,3 +1,4 @@
+import random
 from pathlib import Path
 
 EXTRACTED_DIR = Path("documents/extracted")
@@ -92,10 +93,10 @@ def load_and_chunk_all(extracted_dir: Path = EXTRACTED_DIR) -> list[dict]:
 
 
 def preview_chunks(chunks: list[dict], n: int = 10) -> None:
-    """Print n sample chunks and the total chunk count."""
+    """Print n randomly selected chunks and the total chunk count."""
     print(f"Total chunks: {len(chunks)}\n")
-    print(f"--- Sample {n} chunks ---\n")
-    for chunk in chunks[:n]:
+    print(f"--- Sample {n} random chunks ---\n")
+    for chunk in random.sample(chunks, min(n, len(chunks))):
         print(f"[{chunk['source']} | chunk #{chunk['chunk_index']}]")
         print(chunk["text"])
         print("-" * 60)

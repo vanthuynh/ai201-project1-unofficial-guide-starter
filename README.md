@@ -23,17 +23,18 @@
      Aim for variety — sources that together cover different subtopics or perspectives. -->
 
 | # | Source | Type | URL or file path |
-|---|--------|------|-----------------|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
-| 4 | | | |
-| 5 | | | |
-| 6 | | | |
-| 7 | | | |
-| 8 | | | |
-| 9 | | | |
-| 10 | | | |
+|---|--------|-------------|-----------------|
+| 1 | AllTrails| Blog| documents/extracted/10BestHikesAndTrailsInSantaMonicaMountainsNationalRecreationArea_AllTrails.txt|
+| 2 | Campbell Wellman Blog| Blog| documents/extracted/11BeautifulHikesNearWestLA_ Blog_Campbell Wellman.txt|
+| 3 | Articles| Blog| documents/extracted/LosLionesCanyonTrail–MyFavoriteDateHikeintheSantaMonicaMountains-LA DateIdeas.txt|
+| 4 | Brassy's Blog| Blog| documents/extracted/FavoriteLocalHike_TemescalCanyonTrail_Brassy.txt|
+| 5 | Modern Hiker| Blog| documents/extracted/ParkerMesaviaLosLionesTrail-ModernHiker.txt|
+| 6 | Modern Hiker| Blog| documents/extracted/TheGrottoTrailin theSantaMonicaMountains_ModernHiker.txt|
+| 7 | Articles| Blog| documents/extracted/TheBestHikesinWestLA.txt|
+| 8 | Review| Blog| documents/extracted/6BestHikesinLosAngeles(West Side Edition).txt|
+| 9 | Articles| Blog| documents/extracted/TheBestHikingTrailsNearWestwoodLosAngeles_ShilianGroup.txt|
+| 10 | Personal Blog| Blog| documents/extracted/TemescalCanyonTrail.txt|
+| 11 | UCLA News| Blog| documents/extracted/HikingTrailsNearUCLA–BruinLife.txt|
 
 ---
 
@@ -46,13 +47,13 @@
      - Any preprocessing you did before chunking (e.g., stripping HTML, removing headers)
      - What your final chunk count was across all documents -->
 
-**Chunk size:**
+**Chunk size: 400 characters**
 
-**Overlap:**
+**Overlap: 100 characters**
 
 **Why these choices fit your documents:**
 
-**Final chunk count:**
+**Final chunk count: 196**
 
 ---
 
