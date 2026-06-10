@@ -2,7 +2,7 @@ import pdfplumber
 from pathlib import Path
 
 DOCUMENTS_DIR = Path("documents")
-OUTPUT_DIR = Path("documents")
+OUTPUT_DIR = Path("documents/extracted")
 
 def extract_pdf(pdf_path: Path, output_path: Path) -> None:
     with pdfplumber.open(pdf_path) as pdf:
