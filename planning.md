@@ -158,7 +158,7 @@ all-MiniLM-L6-v2 via sentence-transformers
 |             |      |                  |
 +-------------+      +------------------+
 | METHOD:     |      | MODEL:           |
-| Recursive   |      | LLM (various)    |
+| Semantic   |      | LLM (various)    |
 | Search      |      |                  |
 |             |      | API:             |
 | ACTION:     |      | Groq API         |
