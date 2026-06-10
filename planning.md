@@ -48,7 +48,7 @@ I chose this domain because UCLA students most likely prefer outdoor activities 
 **Reasoning:**
 
 - Most documents here list the trails' names and medium-length paragraphs (about 400 characters) for descriptions
-- I use 100 characters overlap so that some chunks can recover its semantic meaning
+- I use 100 characters overlap so that some chunks can have full meaning
 - We use recursive chunking because our documents are not all the same types, some have long paragraphs, some have shorter paragraphs. The intuition here is to try to keep paragraphs together; if a paragraph is too long, split at sentences; if a sentence is too long, split at words
 ---
 
@@ -125,7 +125,7 @@ all-MiniLM-L6-v2 via sentence-transformers
 | Ingestion   |      |                  |      |       Vector Store       |
 +-------------+      +------------------+      +--------------------------+
 | TOOL:       |      | STRATEGY:        |      | MODEL:                   |
-| pdfplumber  |      | Fixed-size       |      | sentence-transformers    |
+| pdfplumber  |      | Recursive        |      | sentence-transformers    |
 |             |      |                  |      | (all-MiniLM-L6-v2)       |
 | ACTION:     |      | CONFIG:          |      |                          |
 | Extract raw |      | - Size: 500 char |      | DB:                      |
