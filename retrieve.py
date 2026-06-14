@@ -3,29 +3,29 @@ from sentence_transformers import SentenceTransformer
 
 from embed import CHROMA_PATH, COLLECTION_NAME, EMBED_MODEL
 
-TOP_K = 5
+TOP_K = 3
 
 # Evaluation questions from planning.md with their expected answers
 EVAL_QUESTIONS = [
     {
-        "question": "What is the longest hike among the best trails in West Los Angeles Area?",
-        "expected": "Los Liones Trail",
+        "question": "How far away from UCLA is Saddle Peak trail?",
+        "expected": "20.9 miles",
+    },
+    {
+        "question": "What is the elevation gain of Los Leones Trail?",
+        "expected": "1292 ft",
     },
     {
         "question": "Which hike is always mentioned in most articles about West LA trails?",
-        "expected": "Temescal Canyon Trail",
+        "expected": "Los Leones Trail",
     },
     {
-        "question": "What is the easiest or shortest hike among these trails?",
-        "expected": "The Grotto Trail",
+        "question": "What is Los Leones trail parking condition?",
+        "expected": "Free street parking, should arrive early, especially on weekend",
     },
     {
-        "question": "Which hike is more accessible to restaurants or nearby food?",
-        "expected": "Eaton Canyon",
-    },
-    {
-        "question": "What is the most challenging hike longer than 7 miles with high elevation among these trails?",
-        "expected": "Los Liones Trail",
+        "question": "Which hikes have ocean/beach views?",
+        "expected": "Los Leones Trail, Saddle Peak",
     },
 ]
 

@@ -82,11 +82,11 @@ all-MiniLM-L6-v2 via sentence-transformers
 
 | # | Question | Expected answer |
 |---|----------|-----------------|
-| 1 | What is the longest hike among the best trails in West Los Angeles Area?| Los Liones Trail|
-| 2 | Number 1 hike that is always mentioned in most articles| Temescal Canyon Trail|
-| 3 | What is the easiest or shortest hike among these trails?| The Grotto Trail|
-| 4 | Which hike is more accessible to restaurants or nearby food?| Eaton Canyon|
-| 5 | What is the most challenging hike (longer than 7 miles and high elevation) among the these trails?| Los Liones Trail| |
+| 1 | How far away from UCLA is Saddle Peak trail?| 20.9 miles|
+| 2 | What is the elevation gain of Los Leones Trail | 1292 ft|
+| 3 | Which hike is always mentioned in most articles about West LA trails?| Los Leones Trail|
+| 4 | What is Los Leones trail parking condition?| Free street parking, should arrive early, especially on weekend|
+| 5 | Which hikes have ocean/beach views?| Los Leones Trail, Saddle Peak |
 
 ---
 
@@ -158,10 +158,10 @@ all-MiniLM-L6-v2 via sentence-transformers
 |             |      |                  |
 +-------------+      +------------------+
 | METHOD:     |      | MODEL:           |
-| Semantic   |      | LLM (various)    |
-| Search      |      |                  |
+| Top-k       |      | LLM (Groq)    |
+| Semantic search|   |                  |
 |             |      | API:             |
-| ACTION:     |      | Groq API         |
+| ACTION:     |      | llama-3.3-70b-versatile|
 | Fetches     |      |                  |
 | relevant    |      | INPUT:           |
 | full context|      | Query + Context  |
@@ -191,6 +191,11 @@ Input: All PDFs related to the topcis are saved in the Documents folder.
 Expected Output: Python code converts PDFs into text.
 
 Verification: Run the comparison between pdfs and the txt file to make sure it exacts the useful imformation. (Remove irrelavant ads as much as possible)
+
 **Milestone 4 — Embedding and retrieval:**
+
+- 
+
+- Semantic search with Top-k distance scores 
 
 **Milestone 5 — Generation and interface:**
