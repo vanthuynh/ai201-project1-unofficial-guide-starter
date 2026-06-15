@@ -25,7 +25,7 @@ EVAL_QUESTIONS = [
     },
     {
         "question": "Which hikes have ocean/beach views?",
-        "expected": "Los Leones Trail, Saddle Peak",
+        "expected": "Los Leones Trail, Temescal Canyon Trail, and the Grotto Trail" ,
     },
 ]
 
